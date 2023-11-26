@@ -1,0 +1,44 @@
+<div class="os-header" [class.hidden]="isHeaderHidden">
+    <div class="os-logo">
+        <img src="../../../../../assets/images/drlogo2.png" alt="">
+    </div>
+ 
+    <div class="os-nav-links">
+        <ul class="os-ul-nav-links">
+            <li>
+                <a routerLink="/home">
+                    <span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a routerLink="/business">
+                    <span>Buisness</span>
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/achievements">
+                    <span>Achievements</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/home']" fragment="section02" (click)="scrollTo('section02')">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a routerLink="/blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a routerLink="/contacts">
+                    <span>Contacts</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>

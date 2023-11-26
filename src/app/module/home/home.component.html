@@ -1,0 +1,61 @@
+
+<app-header></app-header>
+<div class="os-container" *ngIf="isLoading">
+    <app-spinner></app-spinner>
+</div>
+<div class="os-container" *ngIf="!isLoading"  id="section01">
+    <section class="os-section01 animate__animated animate__fadeIn">
+        <div class="os-left">
+            <h1>Dr.Gamal ElKenany</h1>
+            <p>Chairman of ElKenany Group</p>
+            <div class="btn" (click)="scrollToSection('section02')">
+                <span >Know More</span>
+            </div>
+        </div>
+        <div class="os-right ">
+            <img class="animate__animated animate__fadeIn" src="../../../assets/images/dr.png" alt="">
+        </div>
+    </section>
+
+    
+</div>
+
+<div class="os-container" *ngIf="!isLoading" id="section02">
+    <section class="os-section2 animate__animated animate__fadeIn" >
+        <div class="os-left">
+            <h1>About Dr.Gamal ElKenany</h1>
+            <p>Chairman of ElKenany Group ,ElKenany For Feed Raw Materials Trading, ElKenany Application, GMT Advertising Agency, STARLIGHT INTERNATIONAL TRADING COMPANY L.L.C. He has a Bachelor Degree of Veterinary Medicine and General Surgery, El-Mansoura University year 2008 – 2009. Gamal ElKenany is an Egyptian passionate entrepreneur takes most of the risk and initiative for his new businesses trying to serve the Egyptian market & the middle east as he considered a major player in the Egyptian market today. His success started from believing in his dream by spent time, make efforts, and working so hard to pursuit, with his long-standing expertise through his launch of the businesses that supports small, and medium enterprises in Egypt. Due to his believing in his role in the social responsibilities, he initiates to participate as Vice Chairman of Agriculture Committee in Arab Women Investors Union, Member of the Egyptian Technical Analysts Association.
+
+            </p>
+        </div>
+
+        <div class="os-right ">
+            <div class="video-section">
+            <iframe  id="youtubePlayer" width="315" height="560" src="https://www.youtube.com/embed/BvzlsAHgJfU?loop=1&amp;playlist=BvzlsAHgJfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </section>
+
+    
+</div>
+
+
+<div class="os-container" id="section03">
+    <section class="section03  animate__animated animate__fadeIn">
+        <div class="grid-area">
+
+            <div class="left-top">left-top</div>
+            <div class="left">left</div>
+            <div class="left-bottom">left-bottom</div>
+            <div class="top">top</div>
+            <div class="bottom">bottom</div>
+            <div class="right-top">right-top</div>
+            <div class="right">right</div>
+            <div class="center">
+                <span>Founder Of</span>
+            </div>
+            <div class="right-bottom">right-bottom</div>
+            
+        </div>
+    </section>
+</div>
